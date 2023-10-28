@@ -17,8 +17,7 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-      with:
-        source: "."
+        source: '.'
         target: "/var/www/mywebsite"
 
     - name: Executing remote command
